@@ -1,33 +1,33 @@
-from pyramid.response import Response
 from pyramid.view import view_config
-
-from sqlalchemy.exc import DBAPIError
-
-from ..models import MyModel
+from restaurant_menu_app.models import Appetizer, Entree, Drink
 
 
-@view_config(route_name='home', renderer='../templates/mytemplate.jinja2')
-def my_view(request):
-    try:
-        query = request.dbsession.query(MyModel)
-        one = query.filter(MyModel.name == 'one').first()
-    except DBAPIError:
-        return Response(db_err_msg, content_type='text/plain', status=500)
-    return {'one': one, 'project': 'Restaurant Menu App'}
+@view_config(route_name='home', renderer='../templates/home.jinja2')
+def home(request):
+    return {}
 
 
-db_err_msg = """\
-Pyramid is having a problem using your SQL database.  The problem
-might be caused by one of the following things:
+@view_config(route_name='appetizers', renderer='../templates/appetizers.jinja2')
+def appetizers_list(request):
+    # query the dbsession for appetizer objects
+    appetizers = request.dbsession.query(Appetizer).all()
+    return {
+        'appetizers': appetizers
+    }
 
-1.  You may need to run the "initialize_restaurant_menu_app_db" script
-    to initialize your database tables.  Check your virtual
-    environment's "bin" directory for this script and try to run it.
 
-2.  Your database server may not be running.  Check that the
-    database server referred to by the "sqlalchemy.url" setting in
-    your "development.ini" file is running.
+@view_config(route_name='entrees', renderer='../templates/entrees.jinja2')
+def entrees_list(request):
+    entrees = request.dbsession.query(Entree).all()
+    return {
+        'entrees': entrees
+    }
 
-After you fix the problem, please restart the Pyramid application to
-try it again.
-"""
+
+@view_config(route_name='drinks', renderer='../templates/drinks.jinja2')
+def drinks_list(request):
+    drinks = request.dbsession.query(Drink).all()
+    return {
+        'drinks': drinks
+    }
+

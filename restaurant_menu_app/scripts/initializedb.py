@@ -15,7 +15,7 @@ from ..models import (
     get_session_factory,
     get_tm_session,
     )
-from ..models import MyModel
+from ..models import Appetizer, Entree, Drink
 
 
 def usage(argv):
@@ -32,8 +32,11 @@ def main(argv=sys.argv):
     options = parse_vars(argv[2:])
     setup_logging(config_uri)
     settings = get_appsettings(config_uri, options=options)
+    settings['sqlalchemy.url'] = os.environ.get('DATABASE_URL', '')
 
     engine = get_engine(settings)
+
+    Base.metadata.drop_all(engine)
     Base.metadata.create_all(engine)
 
     session_factory = get_session_factory(engine)
@@ -41,5 +44,24 @@ def main(argv=sys.argv):
     with transaction.manager:
         dbsession = get_tm_session(session_factory, transaction.manager)
 
-        model = MyModel(name='one', value=1)
-        dbsession.add(model)
+        appetizers = [
+            Appetizer(name='Spring Rolls', cost=4.99, description="They are spring rolls. Figure it out.", spiciness=1),
+            Appetizer(name='Haggis', cost=19.99, description="Ew.", spiciness=5, special=True),
+            Appetizer(name='Chicken Satay', cost=5.99, description="Chicken on a stick", spiciness=1),
+            Appetizer(name='Nachos', cost=5.99, description="Why are these even here?", spiciness=1),
+            Appetizer(name='Chicken Wings', cost=5.99, description="These aren't even cooked", spiciness=1)
+        ]
+
+        drinks = [
+            Drink(name='Water', cost=0.99, description="", proof=50),
+            Drink(name='Sprite', cost=0.99, description="", proof=50),
+            Drink(name='Dr. Pepper', cost=0.99, description="", proof=50),
+            Drink(name='Coke', cost=0.99, description="", proof=50),
+            Drink(name='Old Fashioned', cost=0.99, description="", proof=50),
+            Drink(name='Martini', cost=0.99, description="", proof=50),
+            Drink(name='Old Beer', cost=0.99, description="", proof=50),
+        ]
+
+        dbsession.add_all(appetizers)
+        dbsession.add_all(drinks)
+
