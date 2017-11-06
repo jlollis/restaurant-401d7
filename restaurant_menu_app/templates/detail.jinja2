@@ -1,0 +1,17 @@
+{% extends "layout.jinja2" %}
+
+{% block content %}
+<h2>{{ item.name }}{% if item.special %}<i class="fa fa-certificate" aria-hidden="true"></i>{% endif %}</h2>
+<h3>{{ item.cost }}</h3>
+<h4>
+    {% if item.spiciness is defined %}
+    {% for _ in range(item.spiciness) %}
+    <i class="fa fa-fire" aria-hidden="true"></i>
+    {% endfor %}
+    {% endif %}
+    {% if item.proof is defined %}
+    {{ item.proof / 2 }}% ABV
+    {% endif %}
+</h4>
+<p>{{ item.description }}</p>
+{% endblock %}

@@ -2,13 +2,13 @@
 
 ## Routes
 
-- `/` - listing of the entire menu, showing the name of the dish, the price, and a clickable something to show me detail about the food
+<!-- - `/` - listing of the entire menu, showing the name of the dish, the price, and a clickable something to show me detail about the food
 - `/appetizers` - just lists the appetizers
 - `/entrees`
 - `/drinks`
 - `/appetizers/<id>`
 - `/entrees/<id>`
-- `/drinks/<id>`
+- `/drinks/<id>` -->
 - `/appetizers/<id>/edit`
 - `/entrees/<id>/edit`
 - `/drinks/<id>/edit`

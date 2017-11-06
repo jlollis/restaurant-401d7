@@ -1,0 +1,22 @@
+{% extends "layout.jinja2" %}
+
+{% block content %}
+<table>
+    {% for item in items %}
+    <tr>
+        <td>
+            <a href="{{ request.route_url(route, id=item.id) }}">{{ item.name }}</a>
+            {% if item.spiciness is defined %}
+            {% for i in range(item.spiciness) %}
+                <i class="fa fa-fire" aria-hidden="true"></i>
+            {% endfor %}
+            {% endif %}
+            {% if item.proof is defined %}
+            {{ item.proof / 2 }}% ABV
+            {% endif %}
+        </td>
+        <td>${{ item.cost }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

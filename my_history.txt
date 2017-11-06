@@ -1,0 +1,500 @@
+   85  cd /Users/nick/Documents/codefellows/401-python/sea-python-401d7/student_repos/phil/http-server/src
+   86  source ../ENV/bin/activate
+   87  python client.py 'Thing and stuff'
+   88  python
+   89  clear
+   90  python client.py 'Thing and stuff'
+   91  python client.py 'Thing and stuff'
+   92  python client.py 'Thing and stuff'
+   93  python client.py 'Thing and stuff'
+   94  python client.py 'I like things'
+   95  deactivate
+   96  python client.py 'I like things'
+   97  ipython
+   98  python client.py 'blahblé'
+   99  python client.py 'blahblaé'
+  100  ipython
+  101  echo $PATH
+  102  echo $PYTHONPATH
+  103  ipython
+  104  subl /usr/local/Cellar/python/2.7.12_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SimpleHTTPServer.py
+  105  subl /usr/local/Cellar/python/2.7.12_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/BaseHTTPServer.py
+  106  clear
+  107  ipython
+  108  cd ..
+  109  cd ..
+  110  cd ..
+  111  cd ..
+  112  ls
+  113  cd ..
+  114  ls
+  115  ls examples
+  116  cd examples
+  117  cd data-structures
+  118  ls
+  119  subl .
+  120  source ENV/bin/activate
+  121  py.test
+  122  clear
+  123  ls
+  124  touch conftest.py
+  125  py.test
+  126  py.test
+  127  py.test
+  128  ipython
+  129  clear
+  130  bash
+  131  cd Documents
+  132  ls
+  133  cd devworks
+  134  ls
+  135  cd kh-project/
+  136  ls
+  137  cd MOCKUP_PAGES/
+  138  ls
+  139  rm *.png
+  140  ls
+  141  open kyeisha_site_mockup.pdf
+  142  ls -lh kyeisha_site_mockup.pdf 
+  143  open .
+  144  rm kyeisha_site_mockup.pdf 
+  145  python
+  146  open kyeisha_site_mockup.pdf 
+  147  bash
+  148  python3
+  149  ipython
+  150  ps -ef
+  151  clear
+  152  ps -ef | grep ipython
+  153  kill 19545
+  154  curl "https://www.goodreads.com/search.xml?q=Ender%27s+Game"
+  155  curl "https://www.goodreads.com/search.xml?key=LxV5cTXwjHrXd7ZQF6dtxAq=Ender%27s+Game"
+  156  python
+  157  mkdir killme
+  158  cd killme
+  159  python3 -m venv ENV && source ENV/bin/activate
+  160  pip install pytest pytest-mock
+  161  touch fib.py
+  162  subl .
+  163  pip install ipython
+  164  ipython
+  165  touch test_fib.py
+  166  py.test
+  167  py.test
+  168  ipython
+  169  ls
+  170  mv fib.py users.py
+  171  mv test_fib.py test_users.py
+  172  pip install requests
+  173  ls
+  174  python users.py
+  175  python users.py
+  176  pip install pytest
+  177  py.test
+  178  py.test
+  179  py.test
+  180  py.test
+  181  py.test
+  182  py.test
+  183  py.test
+  184  py.test
+  185  py.test
+  186  ipython
+  187  ipython
+  188  py.test
+  189  py.test
+  190  py.test
+  191  deactivate
+  192  cd ..
+  193  rm -rf killme
+  194  bash
+  195  curl -s https://raw.githubusercontent.com/xdissent/ievms/master/ievms.sh | IEVMS_VERSIONS="10" bash
+  196  curl -s https://raw.githubusercontent.com/xdissent/ievms/master/ievms.sh | IEVMS_VERSIONS="10" bash
+  197  curl -s https://raw.githubusercontent.com/xdissent/ievms/master/ievms.sh
+  198  curl -s https://raw.githubusercontent.com/xdissent/ievms/master/ievms.sh | IEVMS_VERSIONS="10" bash
+  199  curl -s https://raw.githubusercontent.com/xdissent/ievms/master/ievms.sh | IEVMS_VERSIONS="10" bash | y
+  200  ls
+  201  curl -s https://raw.githubusercontent.com/xdissent/ievms/master/ievms.sh | bash
+  202  exit
+  203  defaults write com.apple.finder AppleShowAllFiles YES
+  204  bash
+  205  cd /Users/nick/Documents/codefellows/401-python/sea-python-401d7/student_repos/gabe/http-server/src
+  206  python client.py 'GET /sample.txt HTTP/1.1\r\nHost: www.partytime.edu\r\n\r\n'
+  207  python client.py 'GET /make_time.py HTTP/1.1\r\nHost: www.partytime.edu\r\n\r\n'
+  208  python client.py 'GET /a_web_page.html HTTP/1.1\r\nHost: www.partytime.edu\r\n\r\n'
+  209  python client.py 'GET /flergblerg.py HTTP/1.1\r\nHost: www.partytime.edu\r\n\r\n'
+  210  python client.py 'GET ../client.py HTTP/1.1\r\nHost: www.partytime.edu\r\n\r\n'
+  211  python client.py 'GET /../client.py HTTP/1.1\r\nHost: www.partytime.edu\r\n\r\n'
+  212  python client.py 'GET /../../../../ HTTP/1.1\r\nHost: www.partytime.edu\r\n\r\n'
+  213  python client.py 'GET /../../../../../../ HTTP/1.1\r\nHost: www.partytime.edu\r\n\r\n'
+  214  python client.py GET /images/sample_1.png HTTP/1.1\r\nHost: www.partytime.edu\r\n\r\n
+  215  python client.py 'GET /images/sample_1.png HTTP/1.1\r\nHost: www.partytime.edu\r\n\r\n'
+  216  python client.py 'GET /images/sample_1.png HTTP/1.1\r\nHost: www.partytime.edu\r\n\r\n'
+  217  python client.py 'GET /images/sample_1.png HTTP/1.1\r\nHost: www.partytime.edu\r\n\r\n'
+  218  python client.py 'GET /images/sample_1.png HTTP/1.1\r\nHost: www.partytime.edu\r\n\r\n'
+  219  python
+  220  python client.py 'GET /images/sample_1.png HTTP/1.1\r\nHost: www.partytime.edu\r\n\r\n'
+  221  python client.py 'GET /images/sample_1.png HTTP/1.1\r\nHost: www.partytime.edu\r\n\r\n'
+  222  bash
+  223  cd Documents/codefellows
+  224  ls
+  225  cd tools
+  226  ls
+  227  cd groupmaker
+  228  ls
+  229  source ENV/bin/activate
+  230  ls
+  231  cd src
+  232  ls
+  233  cd ..
+  234  groups ../python401d7.txt 
+  235  ls
+  236  deactivate
+  237  cd ..
+  238  ls
+  239  python
+  240  python
+  241  cd ~/Documents/devworks/python-todo-list/
+  242  ls
+  243  cd pyramid
+  244  ls
+  245  git status
+  246  git add . && git commit -m 'Updates to the Pyramid API and authentication. I need to commit way more often'
+  247  git push origin master
+  248  ls
+  249  source ENV/bin/activate
+  250  git status
+  251  pserve development.ini --reload
+  252  git status
+  253  git add . && git commit -m 'Ok API endpoints and views figured out. I really need some tests. This is woefully untested'
+  254  git push origin master
+  255  bash
+  256  cd Documents/devworks/python-todo-list/pyramid
+  257  source ENV/bin/activate
+  258  pip install requests
+  259  pshell development.ini 
+  260  ipython
+  261  bash
+  262  ls
+  263  rm -rf .ievms
+  264  curl -s https://raw.githubusercontent.com/xdissent/ievms/master/ievms.sh | bash
+  265  y
+  266  which VBoxManage
+  267  VBoxManage extpack install /Users/nick/.ievms/Oracle_VM_VirtualBox_Extension_Pack-5.2.0.vbox-extpack 
+  268  brew cask install virtualbox-extension-pack
+  269  brew cask install virtualbox-extension-pack
+  270  bash
+  271  curl -s https://raw.githubusercontent.com/xdissent/ievms/master/ievms.sh | bash
+  272  ls
+  273  bash
+  274  bash
+  275  cd /Users/nick/Documents/codefellows/401-python/
+  276  ls
+  277  cd expense_tracker
+  278  cd ../expense_tracker_401d7/
+  279  ls
+  280  source ENV/bin/activate
+  281  pip freeze > requirements.txt
+  282  ls
+  283  less requirements.txt
+  284  bash
+  285  cd Documents/codefellows/
+  286  ls
+  287  cd 401-python
+  288  ls
+  289  bash
+  290  bash
+  291  cd Documents/codefellows/401-python
+  292  ls
+  293  cd examples
+  294  ls
+  295  cd data-structures/
+  296  ls
+  297  source ENV/bin/activate
+  298  ptw
+  299  ls
+  300  ipython
+  301  deactivate
+  302  cd ..
+  303  ls
+  304  cd ..
+  305  ls
+  306  cd ..
+  307  ls
+  308  cd data-structure-challenges/
+  309  ls
+  310  mkdir zip-lists
+  311  subl .
+  312  touch zip-lists/README.md zip-lists/zippy.py
+  313  git status
+  314  git add . && git commit -m "Adding in a 3-star challenge"
+  315  git status
+  316  git add . && git commit -m 'It helps to have the solution'
+  317  git push origin master
+  318  cd ..
+  319  ls
+  320  cd 401-python
+  321  ls
+  322  cd sea-python-401d7
+  323  ls
+  324  cd student_repos/
+  325  ls
+  326  mkdir zach
+  327  cd zach
+  328  ls
+  329  git clone https://github.com/ztaylor2/pyramid-learning-journal.git
+  330  cd pyramid-learning-journal/
+  331  ls
+  332  git branch -a
+  333  git checkout step2
+  334  python3 -m venv ENV
+  335  source ENV/bin/activate && pip install -e .
+  336  ls
+  337  pserve development.ini --dev
+  338  pserve development.ini --reload
+  339  pip install -e .[testing]
+  340  pserve development.ini --reload
+  341  subl .
+  342  pserve development.ini --reload
+  343  deactivate
+  344  cd ..
+  345  ls
+  346  cd ..
+  347  ls
+  348  mkdir han
+  349  cd han
+  350  git clone https://github.com/han8909227/pyramid-learning-journal.git
+  351  cd pyramid-learning-journal/
+  352  ls
+  353  heroku create han-lj
+  354  git remote -v
+  355  git push heroku master
+  356  heroku addons:create heroku-postgresql:hobby-dev
+  357  heroku logs --tail
+  358  ls
+  359  less run
+  360  less runtime.txt
+  361  less production.ini
+  362  less Procfile 
+  363  less requirements.txt 
+  364  python3 -m venv ENV && source ENV/bin/activate && pip install -e . && pip freeze > requirements.txt
+  365  ls
+  366  less requirements.txt 
+  367  git status
+  368  git add requirements.txt 
+  369  git commit -m 'updating the requirements'
+  370  git push heroku master
+  371  heroku logs --tail
+  372  heroku open
+  373  heroku logs --tail
+  374  ls
+  375  subl .
+  376  deactivate
+  377  cd ..
+  378  ls
+  379  rm -rf pyramid-learning-journal
+  380  cd ..
+  381  ls
+  382  cd chelsea/
+  383  ls
+  384  git clone https://github.com/chelseadole/pyramid-learning-journal.git
+  385  cd pyramid-learning-journal/
+  386  ls
+  387  python3 -m venv ENV && source ENV/bin/activate
+  388  pip install -e .
+  389  pip install -e .[testing]
+  390  ls
+  391  git branch -a
+  392  git checkout step_@
+  393  git checkout step_2 -
+  394  pserve development.ini 
+  395  pserve development.ini --reload
+  396  subl .
+  397  pserve development.ini --reload
+  398  pserve development.ini --reload
+  399  git checkout -- .
+  400  git pull origin step_2
+  401  pserve development.ini --reload
+  402  deactivate
+  403  cd ..
+  404  ls
+  405  rm -rf pyramid-learning-journal
+  406  ls
+  407  git clone https://github.com/chelseadole/pyramid-learning-journal.git
+  408  cd pyramid-learning-journal/
+  409  ls
+  410  clear
+  411  ls
+  412  git branch -a
+  413  git fetch origin broke_ass
+  414  git remote -v
+  415  git checkout step_2
+  416  subl .
+  417  ls
+  418  python3 -m venv ENV && source ENV/bin/activate && pip install -e .[testing]
+  419  pip install -e .[testing]
+  420  ls
+  421  pserve development.ini 
+  422  pserve development.ini --reload
+  423  py.test chelsea_pyramid_learning_journal
+  424  py.test chelsea_pyramid_learning_journal
+  425  py.test chelsea_pyramid_learning_journal
+  426  py.test chelsea_pyramid_learning_journal
+  427  py.test --cov=chelsea_pyramid_learning_journal
+  428  py.test --cov=chelsea_pyramid_learning_journal
+  429  py.test --cov=chelsea_pyramid_learning_journal
+  430  deactivate
+  431  cd ..
+  432  cd ..
+  433  cd ..
+  434  ls
+  435  cd ..
+  436  ls
+  437  mkdir examples
+  438  cd examples
+  439  ls
+  440  mkdir restaurant
+  441  cd restaurant
+  442  ls
+  443  python3 -m venv ENV & source ENV/bin/activate
+  444  source ENV/bin/activate
+  445  ls
+  446  pip install pyramid
+  447  pip install cookiecutter
+  448  cookiecutter https://github.com/Pylons/pyramid-cookiecutter-alchemy
+  449  ls
+  450  mv restaurant_menu_app old
+  451  cp -r old/* ./
+  452  rm -rf old
+  453  ls
+  454  git init
+  455  ls
+  456  touch .gitignore
+  457  subl .
+  458  git status
+  459  git add . && git commit -m 'First commit of the scaffold'
+  460  clear
+  461  touch README.md
+  462  git status
+  463  git add . && git commit -m 'README and first set of routes'
+  464  cd restaurant_menu_app/
+  465  ls
+  466  cd templates
+  467  ls
+  468  mv mytemplate.jinja2 home.jinja2
+  469  touch appetizers.jinja2
+  470  touch entrees.jinja2
+  471  touch drinks.jinja2
+  472  cd ..
+  473  cd ..
+  474  pserve development.ini --reload
+  475  pip install -e .[testing]
+  476  pserve development.ini --reload
+  477  pip install -e .
+  478  clear
+  479  createdb restaurant
+  480  export DATABASE_URL='postgres://localhost:5432/restaurant'
+  481  initdb development.ini 
+  482  initdb development.ini 
+  483  initdb development.ini 
+  484  pip install -e .
+  485  initdb development.ini 
+  486  pserve development.ini --reload
+  487  initdb development.ini 
+  488  initdb development.ini 
+  489  pserve development.ini --reload
+  490  initdb development.ini 
+  491  pserve development.ini --reload
+  492  initdb development.ini 
+  493  pserve development.ini --reload
+  494  initdb development.ini 
+  495  pserve development.ini --reload
+  496  git status
+  497  git add . && git commit -m 'End of day 1 working on this application. List views written out. Need detail and edits now'
+  498  git remote add origin https://github.com/codefellows/restaurant-401d7.git
+  499  git push origin master
+  500  bash
+  501  cd /Users/nick/Documents/codefellows/401-python/
+  502  ls
+  503  cd sea-python-401d7
+  504  ls
+  505  cd student_repos/
+  506  ls
+  507  cd han
+  508  ls
+  509  git clone https://github.com/han8909227/data-structures.git
+  510  cd data-structures/
+  511  ls
+  512  git branch -a
+  513  git checkout graph_1
+  514  python3 -m venv ENV && source ENV/bin/activate && pip install -e .
+  515  subl .
+  516  pip install -e .[testing]
+  517  pip install -e .[test]
+  518  c;ear
+  519  clear
+  520  ipython
+  521  deactivate
+  522  cd ..
+  523  cd ..
+  524  cd ..
+  525  cd ..
+  526  ls
+  527  cd examples/restaurant/
+  528  ls
+  529  source ENV/bin/activate
+  530  subl .
+  531  git standup
+  532  deactivate
+  533  cd ..
+  534  cd ..
+  535  cd sea-python-401d7
+  536  ls
+  537  cp -r ../python-dev-accelerator/build/html .
+  538  git status
+  539  rm -rf html
+  540  cp -r ../python-dev-accelerator/build/html/* .
+  541  git status
+  542  git commit -am 'Adding in week 4'
+  543  git push origin master
+  544  cd ../examples/restaurant/
+  545  ls
+  546  source ENV/bin/activate
+  547  cd restaurant_menu_app
+  548  cd templates
+  549  ls
+  550  touch detail.jinja2
+  551  cd ../..
+  552  pserve development.ini --reload
+  553  psql
+  554  env
+  555  export DATABASE_URL='postgres://localhost:5432/restaurant'
+  556  echo $DATABASE_URL
+  557  pserve development.ini --reload
+  558  ls
+  559  cd restaurant_menu_app
+  560  ls
+  561  cd templates
+  562  ls
+  563  touch list.jinja2
+  564  cd ../..
+  565  pserve development.ini --reload
+  566  ls
+  567  cd restaurant_menu_app/templates/
+  568  ls
+  569  rm appetizers.jinja2 entrees.jinja2 drinks.jinja2 
+  570  ls
+  571  cd ../..
+  572  pserve development.ini --reload
+  573  heroku create
+  574  ls
+  575  heroku help
+  576  heroku destroy
+  577  ls
+  578  cd restaurant_menu_app/templates/
+  579  heroku create
+  580  cd ../..
+  581  pip freeze
+  582  pip freeze > requirements.txt
+  583  history
+  584  history > my_history.txt
