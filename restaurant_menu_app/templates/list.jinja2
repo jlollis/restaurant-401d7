@@ -1,6 +1,9 @@
 {% extends "layout.jinja2" %}
 
 {% block content %}
+{% if not items %}
+<h1>We're out of stock! Maybe have some water... and haggis</h1>
+{% else %}
 <table>
     {% for item in items %}
     <tr>
@@ -19,4 +22,5 @@
     </tr>
     {% endfor %}
 </table>
+{% endif %}
 {% endblock %}
